@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'CopyableLabel_Example', :exclusive => true do
+  pod 'CopyableLabel', :path => '../'
+end
+
+target 'CopyableLabel_Tests', :exclusive => true do
+  pod 'CopyableLabel', :path => '../'
+
+  
+end

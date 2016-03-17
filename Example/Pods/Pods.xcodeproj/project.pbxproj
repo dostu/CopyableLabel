@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		197D6913D3C78E740956F500BDB3B575 /* Pods-CopyableLabel_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E1384E3259E8C7A65183C37401AC85D /* Pods-CopyableLabel_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3756C80DFA1E1425026B9709856584D1 /* Pods-CopyableLabel_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03FC81E082B15B2B85768A9A442B0033 /* Pods-CopyableLabel_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85E62962656939F839F2249A8E632205 /* Pods-CopyableLabel_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4604A8D57C4FCEA3F3E0D34017DA7830 /* Pods-CopyableLabel_Example-dummy.m */; };
+		8BC9D824B67E4F56CA3AC624AA6716A5 /* CopyableLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3596F5227BB4DCB02EE2448CF692809 /* CopyableLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7568D06BEA41582136F7E5A9D539752 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		A7C9C5A0998763488ED331989D4DBE09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		AAF106C3ECF726036A9F49E2950705A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		ACFE8A21ACE8A0E587088B9FA2090467 /* Pods-CopyableLabel_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19859B32257A40CCA3B1C97E13ACF27F /* Pods-CopyableLabel_Tests-dummy.m */; };
+		B318C82DC1312D08C17F5480F5D74593 /* CopyableLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C44EC56E6A42C261074B42F1545E85FE /* CopyableLabel-dummy.m */; };
+		CA853764439E5A9035D0A704DD67BEE0 /* CopyableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4DD169ABDF41E4B8093521DB5E448A /* CopyableLabel.swift */; };
+		EF73692F47494F3EAE1123CB580A9EA7 /* CopyableLabel.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F3C2C99E677534F5C9544E2EA7B16B5A /* CopyableLabel.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12E838E12CCB697D9A81EA838D6ED27A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38C0096F9B82078C2B2EC76AE5B41C93;
+			remoteInfo = CopyableLabel;
+		};
+		21ECF10BBD32FDCD2991B7555813FADB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16AAFAA73FE465F304256E87E3E9C55E;
+			remoteInfo = "CopyableLabel-CopyableLabel";
+		};
+		8D4B9D4E77F13982560D824D124A906B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38C0096F9B82078C2B2EC76AE5B41C93;
+			remoteInfo = CopyableLabel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03FC81E082B15B2B85768A9A442B0033 /* Pods-CopyableLabel_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CopyableLabel_Tests-umbrella.h"; sourceTree = "<group>"; };
+		0E1384E3259E8C7A65183C37401AC85D /* Pods-CopyableLabel_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CopyableLabel_Example-umbrella.h"; sourceTree = "<group>"; };
+		19859B32257A40CCA3B1C97E13ACF27F /* Pods-CopyableLabel_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CopyableLabel_Tests-dummy.m"; sourceTree = "<group>"; };
+		19E41E6BF1EA9A4F637324FF6ABE9FF1 /* Pods-CopyableLabel_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CopyableLabel_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1BE8A91F07DEE516FA93F79234F6574C /* CopyableLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CopyableLabel-prefix.pch"; sourceTree = "<group>"; };
+		1DFD2E638A3F05B190D1901952C93D6F /* Pods-CopyableLabel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CopyableLabel_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		2415ECC2EF74301B350A11D86EC74FE6 /* Pods-CopyableLabel_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CopyableLabel_Example-frameworks.sh"; sourceTree = "<group>"; };
+		28A6A9024662D2A34EB932E08189B2A5 /* CopyableLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CopyableLabel.xcconfig; sourceTree = "<group>"; };
+		3C6A4F2E6DF5E5EF36C787C0C872EF50 /* Pods-CopyableLabel_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CopyableLabel_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4604A8D57C4FCEA3F3E0D34017DA7830 /* Pods-CopyableLabel_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CopyableLabel_Example-dummy.m"; sourceTree = "<group>"; };
+		57A8A98A12A95868C821BD9156300DD4 /* Pods-CopyableLabel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CopyableLabel_Example.modulemap"; sourceTree = "<group>"; };
+		69AF66BD2756760F7352A0C6C7467592 /* Pods-CopyableLabel_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CopyableLabel_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6A200AE76DBACBE52214FDF97146CCBE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D0609FC2BE0AA9A22E3C51904033BFE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75C2408CB5648815627BF24EEF162B90 /* Pods-CopyableLabel_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CopyableLabel_Tests.modulemap"; sourceTree = "<group>"; };
+		7B0A44CAB20F505150079970676BD765 /* Pods-CopyableLabel_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CopyableLabel_Example-resources.sh"; sourceTree = "<group>"; };
+		7D4DD169ABDF41E4B8093521DB5E448A /* CopyableLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CopyableLabel.swift; sourceTree = "<group>"; };
+		82AC93A0B5094D5817579EF1638AE842 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4259F2EBCF7738B8821FC0A6708AE13 /* Pods_CopyableLabel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CopyableLabel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4ECBD50B9C19FEAC2FE924E109BC489 /* Pods-CopyableLabel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CopyableLabel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A84090435DFCDB8BE296626BC2831336 /* CopyableLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CopyableLabel.modulemap; sourceTree = "<group>"; };
+		B82068C37FFF5A60DB9B89AC8AEF8DF7 /* Pods-CopyableLabel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CopyableLabel_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC60690045EE406138E85EC5F297EAD3 /* Pods-CopyableLabel_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CopyableLabel_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		BCE2FE0129F530BB882F9A4C62583043 /* Pods_CopyableLabel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CopyableLabel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C44EC56E6A42C261074B42F1545E85FE /* CopyableLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CopyableLabel-dummy.m"; sourceTree = "<group>"; };
+		CDCFC18FD122F223937BD9459E1E341E /* Pods-CopyableLabel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CopyableLabel_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E3596F5227BB4DCB02EE2448CF692809 /* CopyableLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CopyableLabel-umbrella.h"; sourceTree = "<group>"; };
+		E8AB696499CDC435C01210CF6A2B6ABE /* Pods-CopyableLabel_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CopyableLabel_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EA822452A8EC05C124925B93D8DB4295 /* Pods-CopyableLabel_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CopyableLabel_Tests-resources.sh"; sourceTree = "<group>"; };
+		F222692C950508DA58458C958A5D13B3 /* CopyableLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CopyableLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3C2C99E677534F5C9544E2EA7B16B5A /* CopyableLabel.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CopyableLabel.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		033F7E12A9C04F7E46C5150670AAE22A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7C9C5A0998763488ED331989D4DBE09 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51B515A688F144BA1B40FA05E5C56509 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7568D06BEA41582136F7E5A9D539752 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FC85B61C4559D4092B47519354E37B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAF106C3ECF726036A9F49E2950705A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD5F72300DA3A5DC092A68FB284F2200 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0701E9D5EF138736B50EB5143161EEBB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A84090435DFCDB8BE296626BC2831336 /* CopyableLabel.modulemap */,
+				28A6A9024662D2A34EB932E08189B2A5 /* CopyableLabel.xcconfig */,
+				C44EC56E6A42C261074B42F1545E85FE /* CopyableLabel-dummy.m */,
+				1BE8A91F07DEE516FA93F79234F6574C /* CopyableLabel-prefix.pch */,
+				E3596F5227BB4DCB02EE2448CF692809 /* CopyableLabel-umbrella.h */,
+				6D0609FC2BE0AA9A22E3C51904033BFE /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CopyableLabel";
+			sourceTree = "<group>";
+		};
+		0E9D053273610579E4F5B8B38CCB80C8 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				CD6DFABC8C47EC5B9DBCCDB8E91BEBA0 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		33F5A2392EE7E983F42EFB286D262479 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5C404EE03F03EC5B0E44B893B8CDB71 /* CopyableLabel */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		661B128DF8FE6BB65A81B7D191E4F7E7 /* Pods-CopyableLabel_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				82AC93A0B5094D5817579EF1638AE842 /* Info.plist */,
+				75C2408CB5648815627BF24EEF162B90 /* Pods-CopyableLabel_Tests.modulemap */,
+				69AF66BD2756760F7352A0C6C7467592 /* Pods-CopyableLabel_Tests-acknowledgements.markdown */,
+				E8AB696499CDC435C01210CF6A2B6ABE /* Pods-CopyableLabel_Tests-acknowledgements.plist */,
+				19859B32257A40CCA3B1C97E13ACF27F /* Pods-CopyableLabel_Tests-dummy.m */,
+				BC60690045EE406138E85EC5F297EAD3 /* Pods-CopyableLabel_Tests-frameworks.sh */,
+				EA822452A8EC05C124925B93D8DB4295 /* Pods-CopyableLabel_Tests-resources.sh */,
+				03FC81E082B15B2B85768A9A442B0033 /* Pods-CopyableLabel_Tests-umbrella.h */,
+				A4ECBD50B9C19FEAC2FE924E109BC489 /* Pods-CopyableLabel_Tests.debug.xcconfig */,
+				B82068C37FFF5A60DB9B89AC8AEF8DF7 /* Pods-CopyableLabel_Tests.release.xcconfig */,
+			);
+			name = "Pods-CopyableLabel_Tests";
+			path = "Target Support Files/Pods-CopyableLabel_Tests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				33F5A2392EE7E983F42EFB286D262479 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				FE89D51EE19C6141F1BB232682447F88 /* Products */,
+				CBFD686A83F27FDABBB1C04A81AB9BB4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C2B4FD71020DD9FB60B4D28D790FE925 /* Pods-CopyableLabel_Example */ = {
+			isa = PBXGroup;
+			children = (
+				6A200AE76DBACBE52214FDF97146CCBE /* Info.plist */,
+				57A8A98A12A95868C821BD9156300DD4 /* Pods-CopyableLabel_Example.modulemap */,
+				19E41E6BF1EA9A4F637324FF6ABE9FF1 /* Pods-CopyableLabel_Example-acknowledgements.markdown */,
+				3C6A4F2E6DF5E5EF36C787C0C872EF50 /* Pods-CopyableLabel_Example-acknowledgements.plist */,
+				4604A8D57C4FCEA3F3E0D34017DA7830 /* Pods-CopyableLabel_Example-dummy.m */,
+				2415ECC2EF74301B350A11D86EC74FE6 /* Pods-CopyableLabel_Example-frameworks.sh */,
+				7B0A44CAB20F505150079970676BD765 /* Pods-CopyableLabel_Example-resources.sh */,
+				0E1384E3259E8C7A65183C37401AC85D /* Pods-CopyableLabel_Example-umbrella.h */,
+				1DFD2E638A3F05B190D1901952C93D6F /* Pods-CopyableLabel_Example.debug.xcconfig */,
+				CDCFC18FD122F223937BD9459E1E341E /* Pods-CopyableLabel_Example.release.xcconfig */,
+			);
+			name = "Pods-CopyableLabel_Example";
+			path = "Target Support Files/Pods-CopyableLabel_Example";
+			sourceTree = "<group>";
+		};
+		CBFD686A83F27FDABBB1C04A81AB9BB4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2B4FD71020DD9FB60B4D28D790FE925 /* Pods-CopyableLabel_Example */,
+				661B128DF8FE6BB65A81B7D191E4F7E7 /* Pods-CopyableLabel_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CD6DFABC8C47EC5B9DBCCDB8E91BEBA0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7D4DD169ABDF41E4B8093521DB5E448A /* CopyableLabel.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E5C404EE03F03EC5B0E44B893B8CDB71 /* CopyableLabel */ = {
+			isa = PBXGroup;
+			children = (
+				0E9D053273610579E4F5B8B38CCB80C8 /* Pod */,
+				0701E9D5EF138736B50EB5143161EEBB /* Support Files */,
+			);
+			name = CopyableLabel;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		FE89D51EE19C6141F1BB232682447F88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3C2C99E677534F5C9544E2EA7B16B5A /* CopyableLabel.bundle */,
+				F222692C950508DA58458C958A5D13B3 /* CopyableLabel.framework */,
+				A4259F2EBCF7738B8821FC0A6708AE13 /* Pods_CopyableLabel_Example.framework */,
+				BCE2FE0129F530BB882F9A4C62583043 /* Pods_CopyableLabel_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0C60CC9DE9A3A0CFE4F4A1B215982B1D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				197D6913D3C78E740956F500BDB3B575 /* Pods-CopyableLabel_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B139AB27BD467939CA9B66997148223 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3756C80DFA1E1425026B9709856584D1 /* Pods-CopyableLabel_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F6F85BCF5B97C92A6A5444D8E155652 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BC9D824B67E4F56CA3AC624AA6716A5 /* CopyableLabel-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		16AAFAA73FE465F304256E87E3E9C55E /* CopyableLabel-CopyableLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E72F01F59A94E65251F88EB880F6CB7 /* Build configuration list for PBXNativeTarget "CopyableLabel-CopyableLabel" */;
+			buildPhases = (
+				4E3428F0DEBFAB14BC03917467DD018B /* Sources */,
+				AD5F72300DA3A5DC092A68FB284F2200 /* Frameworks */,
+				14C0C37E1BEA2DE7F3823E84FFB6002B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CopyableLabel-CopyableLabel";
+			productName = "CopyableLabel-CopyableLabel";
+			productReference = F3C2C99E677534F5C9544E2EA7B16B5A /* CopyableLabel.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		289DD2D972CD6F01A5E0CCD58437A8EF /* Pods-CopyableLabel_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9EDF39FA276DB53316578FB56C64A92 /* Build configuration list for PBXNativeTarget "Pods-CopyableLabel_Example" */;
+			buildPhases = (
+				4B6086D0F1476B4D23C1A4788E0029AF /* Sources */,
+				51B515A688F144BA1B40FA05E5C56509 /* Frameworks */,
+				0C60CC9DE9A3A0CFE4F4A1B215982B1D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				144D529ED2F994D67765A1E68F285635 /* PBXTargetDependency */,
+			);
+			name = "Pods-CopyableLabel_Example";
+			productName = "Pods-CopyableLabel_Example";
+			productReference = A4259F2EBCF7738B8821FC0A6708AE13 /* Pods_CopyableLabel_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		38C0096F9B82078C2B2EC76AE5B41C93 /* CopyableLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47BD173BB5CA4C924412C63FBAF9DE96 /* Build configuration list for PBXNativeTarget "CopyableLabel" */;
+			buildPhases = (
+				F0962C025D4DD094C64867BFEDAFB12F /* Sources */,
+				6FC85B61C4559D4092B47519354E37B5 /* Frameworks */,
+				0DE4B94144A946ACBB06B435715B4598 /* Resources */,
+				3F6F85BCF5B97C92A6A5444D8E155652 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9E9E24159FB292E24C20E45D2DD524B /* PBXTargetDependency */,
+			);
+			name = CopyableLabel;
+			productName = CopyableLabel;
+			productReference = F222692C950508DA58458C958A5D13B3 /* CopyableLabel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8F370D774E2FA8779CD47CE5C1D55A7F /* Pods-CopyableLabel_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 931CF70E57A111AB50C21E772AB4BF86 /* Build configuration list for PBXNativeTarget "Pods-CopyableLabel_Tests" */;
+			buildPhases = (
+				203702B4D9266F977BBA543DC1DE7CE3 /* Sources */,
+				033F7E12A9C04F7E46C5150670AAE22A /* Frameworks */,
+				1B139AB27BD467939CA9B66997148223 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A36B1A17A23F615065AC91BEB4AE3B3 /* PBXTargetDependency */,
+			);
+			name = "Pods-CopyableLabel_Tests";
+			productName = "Pods-CopyableLabel_Tests";
+			productReference = BCE2FE0129F530BB882F9A4C62583043 /* Pods_CopyableLabel_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = FE89D51EE19C6141F1BB232682447F88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38C0096F9B82078C2B2EC76AE5B41C93 /* CopyableLabel */,
+				16AAFAA73FE465F304256E87E3E9C55E /* CopyableLabel-CopyableLabel */,
+				289DD2D972CD6F01A5E0CCD58437A8EF /* Pods-CopyableLabel_Example */,
+				8F370D774E2FA8779CD47CE5C1D55A7F /* Pods-CopyableLabel_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0DE4B94144A946ACBB06B435715B4598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF73692F47494F3EAE1123CB580A9EA7 /* CopyableLabel.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14C0C37E1BEA2DE7F3823E84FFB6002B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		203702B4D9266F977BBA543DC1DE7CE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACFE8A21ACE8A0E587088B9FA2090467 /* Pods-CopyableLabel_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B6086D0F1476B4D23C1A4788E0029AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85E62962656939F839F2249A8E632205 /* Pods-CopyableLabel_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E3428F0DEBFAB14BC03917467DD018B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0962C025D4DD094C64867BFEDAFB12F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B318C82DC1312D08C17F5480F5D74593 /* CopyableLabel-dummy.m in Sources */,
+				CA853764439E5A9035D0A704DD67BEE0 /* CopyableLabel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		144D529ED2F994D67765A1E68F285635 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CopyableLabel;
+			target = 38C0096F9B82078C2B2EC76AE5B41C93 /* CopyableLabel */;
+			targetProxy = 12E838E12CCB697D9A81EA838D6ED27A /* PBXContainerItemProxy */;
+		};
+		7A36B1A17A23F615065AC91BEB4AE3B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CopyableLabel;
+			target = 38C0096F9B82078C2B2EC76AE5B41C93 /* CopyableLabel */;
+			targetProxy = 8D4B9D4E77F13982560D824D124A906B /* PBXContainerItemProxy */;
+		};
+		E9E9E24159FB292E24C20E45D2DD524B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CopyableLabel-CopyableLabel";
+			target = 16AAFAA73FE465F304256E87E3E9C55E /* CopyableLabel-CopyableLabel */;
+			targetProxy = 21ECF10BBD32FDCD2991B7555813FADB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A9606383DC2E762CA1EE3DFE0A32699 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28A6A9024662D2A34EB932E08189B2A5 /* CopyableLabel.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = CopyableLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		52447F436552B623A919FDF27AF638DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDCFC18FD122F223937BD9459E1E341E /* Pods-CopyableLabel_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CopyableLabel_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CopyableLabel_Example/Pods-CopyableLabel_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_CopyableLabel_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		59A1B9F564E446CD5A7AB100A0E08F9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28A6A9024662D2A34EB932E08189B2A5 /* CopyableLabel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CopyableLabel/CopyableLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CopyableLabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CopyableLabel/CopyableLabel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CopyableLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9DB97002745822DC13ABECD9E175967F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28A6A9024662D2A34EB932E08189B2A5 /* CopyableLabel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CopyableLabel/CopyableLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CopyableLabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CopyableLabel/CopyableLabel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CopyableLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A711FCFA0B123000595FFF62AD36F1DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28A6A9024662D2A34EB932E08189B2A5 /* CopyableLabel.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = CopyableLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		CF5D2F03173242477065B124B19EAEE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4ECBD50B9C19FEAC2FE924E109BC489 /* Pods-CopyableLabel_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CopyableLabel_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CopyableLabel_Tests/Pods-CopyableLabel_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_CopyableLabel_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D1D785C49602FEE4B90FEA0241823309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DFD2E638A3F05B190D1901952C93D6F /* Pods-CopyableLabel_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CopyableLabel_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CopyableLabel_Example/Pods-CopyableLabel_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_CopyableLabel_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4B214B9415A262E43AE81B897C2878B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B82068C37FFF5A60DB9B89AC8AEF8DF7 /* Pods-CopyableLabel_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CopyableLabel_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CopyableLabel_Tests/Pods-CopyableLabel_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_CopyableLabel_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E72F01F59A94E65251F88EB880F6CB7 /* Build configuration list for PBXNativeTarget "CopyableLabel-CopyableLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A711FCFA0B123000595FFF62AD36F1DE /* Debug */,
+				4A9606383DC2E762CA1EE3DFE0A32699 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47BD173BB5CA4C924412C63FBAF9DE96 /* Build configuration list for PBXNativeTarget "CopyableLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59A1B9F564E446CD5A7AB100A0E08F9C /* Debug */,
+				9DB97002745822DC13ABECD9E175967F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		931CF70E57A111AB50C21E772AB4BF86 /* Build configuration list for PBXNativeTarget "Pods-CopyableLabel_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF5D2F03173242477065B124B19EAEE5 /* Debug */,
+				F4B214B9415A262E43AE81B897C2878B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9EDF39FA276DB53316578FB56C64A92 /* Build configuration list for PBXNativeTarget "Pods-CopyableLabel_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1D785C49602FEE4B90FEA0241823309 /* Debug */,
+				52447F436552B623A919FDF27AF638DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
