@@ -24,7 +24,7 @@ public extension UILabel {
         }
     }
 
-    var longPressGestureRecognizer: UILongPressGestureRecognizer? {
+    private var longPressGestureRecognizer: UILongPressGestureRecognizer? {
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.longPressGestureRecognizer) as?
                 UILongPressGestureRecognizer
@@ -64,10 +64,12 @@ public extension UILabel {
     }
 
     public override func canBecomeFirstResponder() -> Bool {
-        return true
+        return copyable
     }
 
     public override func canPerformAction(action: Selector, withSender sender: AnyObject?) -> Bool {
+        guard copyable else { return false }
+
         if action == "copy:" {
             return true
         }
