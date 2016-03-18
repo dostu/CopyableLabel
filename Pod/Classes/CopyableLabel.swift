@@ -1,24 +1,55 @@
 import UIKit
 
-class CopyableLabel: UILabel {
+public extension UILabel {
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-
-        initialize()
+    private struct AssociatedKeys {
+        static var copyable = "copyable"
+        static var longPressGestureRecognizer = "longPressGestureRecognizer"
     }
 
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    @IBInspectable var copyable: Bool {
+        get {
+            guard let number = objc_getAssociatedObject(self, &AssociatedKeys.copyable) as? NSNumber else {
+                return true
+            }
 
-        initialize()
+            return number.boolValue
+        }
+
+        set {
+            objc_setAssociatedObject(self, &AssociatedKeys.copyable, NSNumber(bool: newValue),
+                objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+
+            newValue ? enableCopying() : disableCopying()
+        }
     }
 
-    func initialize() {
+    var longPressGestureRecognizer: UILongPressGestureRecognizer? {
+        get {
+            return objc_getAssociatedObject(self, &AssociatedKeys.longPressGestureRecognizer) as?
+                UILongPressGestureRecognizer
+        }
+
+        set {
+            objc_setAssociatedObject(self, &AssociatedKeys.longPressGestureRecognizer, newValue,
+                objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+
+    func enableCopying() {
         userInteractionEnabled = true
 
-        let longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: "showCopyMenu")
-        addGestureRecognizer(longPressGestureRecognizer)
+        longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: "showCopyMenu")
+        addGestureRecognizer(longPressGestureRecognizer!)
+    }
+
+    func disableCopying() {
+        userInteractionEnabled = false
+
+        if let gestureRecognizer = longPressGestureRecognizer {
+            removeGestureRecognizer(gestureRecognizer)
+            longPressGestureRecognizer = nil
+        }
     }
 
     func showCopyMenu() {
@@ -32,11 +63,11 @@ class CopyableLabel: UILabel {
         copyMenu.setMenuVisible(true, animated: true)
     }
 
-    override func canBecomeFirstResponder() -> Bool {
+    public override func canBecomeFirstResponder() -> Bool {
         return true
     }
 
-    override func canPerformAction(action: Selector, withSender sender: AnyObject?) -> Bool {
+    public override func canPerformAction(action: Selector, withSender sender: AnyObject?) -> Bool {
         if action == "copy:" {
             return true
         }
@@ -44,7 +75,7 @@ class CopyableLabel: UILabel {
         return super.canPerformAction(action, withSender: sender)
     }
 
-    override func copy(sender: AnyObject?) {
+    public override func copy(sender: AnyObject?) {
         UIPasteboard.generalPasteboard().string = text
     }
     

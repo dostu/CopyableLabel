@@ -1,6 +1,6 @@
 # CopyableLabel
 
-CopyableLabel allows to copy text of UILabel after long press.
+UILabel extension to enable copying
 
 ![Screenshot](http://i.imgur.com/ukNVqWf.png)
 
@@ -9,10 +9,11 @@ CopyableLabel allows to copy text of UILabel after long press.
 ```swift
 import CopyableLabel
 
-let label = CopyableLabel()
+let label = UILabel()
+label.copyable = true
 ```
 
-Or change label class to CopyableLabel in Interface Builder.
+Or set copyable property to true in Interface Builder.
 
 ## Requirements
 

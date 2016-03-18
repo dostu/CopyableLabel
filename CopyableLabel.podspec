@@ -1,9 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = "CopyableLabel"
-  s.version          = "1.0.0"
-  s.summary          = "Copy after long press on UILabel"
+  s.version          = "2.0.0"
+  s.summary          = "UILabel extension to enable copying"
   s.description      = <<-DESC
-                        CopyableLabel allows to copy text of UILabel after long press.
+                        Copying can be enabled by setting copyable property of UILabel either in Interface Builder or
+                        programatically.
                        DESC
 
   s.homepage         = "https://github.com/weby/CopyableLabel"
