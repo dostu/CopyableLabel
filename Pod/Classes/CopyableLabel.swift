@@ -39,7 +39,7 @@ public extension UILabel {
     func enableCopying() {
         userInteractionEnabled = true
 
-        longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: "showCopyMenu")
+        longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(showCopyMenu))
         addGestureRecognizer(longPressGestureRecognizer!)
     }
 
@@ -70,7 +70,7 @@ public extension UILabel {
     public override func canPerformAction(action: Selector, withSender sender: AnyObject?) -> Bool {
         guard copyable else { return false }
 
-        if action == "copy:" {
+        if action == #selector(copy(_:)) {
             return true
         }
 
