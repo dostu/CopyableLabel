@@ -17,7 +17,7 @@ public extension UILabel {
         }
 
         set {
-            objc_setAssociatedObject(self, &AssociatedKeys.copyable, NSNumber(bool: newValue),
+            objc_setAssociatedObject(self, &AssociatedKeys.copyable, NSNumber(value: newValue),
                 objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
 
             newValue ? enableCopying() : disableCopying()
@@ -37,14 +37,14 @@ public extension UILabel {
     }
 
     func enableCopying() {
-        userInteractionEnabled = true
+        isUserInteractionEnabled = true
 
         longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(showCopyMenu))
         addGestureRecognizer(longPressGestureRecognizer!)
     }
 
     func disableCopying() {
-        userInteractionEnabled = false
+        isUserInteractionEnabled = false
 
         if let gestureRecognizer = longPressGestureRecognizer {
             removeGestureRecognizer(gestureRecognizer)
@@ -53,21 +53,21 @@ public extension UILabel {
     }
 
     func showCopyMenu() {
-        let copyMenu = UIMenuController.sharedMenuController()
+        let copyMenu = UIMenuController.shared
 
-        guard !copyMenu.menuVisible else { return }
+        guard !copyMenu.isMenuVisible else { return }
 
         becomeFirstResponder()
 
-        copyMenu.setTargetRect(bounds, inView: self)
+        copyMenu.setTargetRect(bounds, in: self)
         copyMenu.setMenuVisible(true, animated: true)
     }
 
-    public override func canBecomeFirstResponder() -> Bool {
+    open override var canBecomeFirstResponder : Bool {
         return copyable
     }
 
-    public override func canPerformAction(action: Selector, withSender sender: AnyObject?) -> Bool {
+    open override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
         guard copyable else { return false }
 
         if action == #selector(copy(_:)) {
@@ -77,8 +77,8 @@ public extension UILabel {
         return super.canPerformAction(action, withSender: sender)
     }
 
-    public override func copy(sender: AnyObject?) {
-        UIPasteboard.generalPasteboard().string = text
+    open override func copy(_ sender: Any?) {
+        UIPasteboard.general.string = text
     }
     
 }
