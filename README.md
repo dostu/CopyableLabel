@@ -2,7 +2,7 @@
 
 UILabel extension to enable copying
 
-![Screenshot](http://i.imgur.com/ukNVqWf.png)
+![Screenshot](http://i.imgur.com/7kyuTS9.png)
 
 ## Usage
 
@@ -17,9 +17,11 @@ Or set copyable property to true in Interface Builder.
 
 ## Requirements
 
-iOS 8 or higher
+iOS 9 or higher
 
 ## Installation
+
+### CocoaPods
 
 CopyableLabel is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -27,6 +29,12 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "CopyableLabel"
 ```
+
+### Carthage
+
+You can use Carthage to install CopyableLabel by adding it to your Cartfile:
+
+github "weby/CopyableLabel"
 
 ## Author
 

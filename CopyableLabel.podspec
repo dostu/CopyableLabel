@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "CopyableLabel"
-  s.version          = "3.1.0"
+  s.version          = "3.1.1"
   s.summary          = "UILabel extension to enable copying"
   s.description      = <<-DESC
                         Copying can be enabled by setting copyable property of UILabel either in Interface Builder or
