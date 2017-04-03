@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "CopyableLabel"
-  s.version          = "3.0.0"
+  s.version          = "3.1.0"
   s.summary          = "UILabel extension to enable copying"
   s.description      = <<-DESC
                         Copying can be enabled by setting copyable property of UILabel either in Interface Builder or
@@ -8,13 +8,13 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = "https://github.com/weby/CopyableLabel"
-  s.screenshots      = "http://i.imgur.com/ukNVqWf.png"
+  s.screenshots      = "http://i.imgur.com/7kyuTS9.png"
   s.license          = 'MIT'
   s.author           = { "Donatas Stundys" => "donatas.stundys@gmail.com" }
   s.source           = { :git => "https://github.com/weby/CopyableLabel.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '9.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'Source/*.swift'
 end

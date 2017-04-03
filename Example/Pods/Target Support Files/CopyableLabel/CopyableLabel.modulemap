@@ -1,6 +1,0 @@
-framework module CopyableLabel {
-  umbrella header "CopyableLabel-umbrella.h"
-
-  export *
-  module * { export * }
-}
