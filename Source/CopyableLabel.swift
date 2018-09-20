@@ -59,7 +59,12 @@ extension UILabel {
 
         becomeFirstResponder()
 
-        copyMenu.setTargetRect(bounds, in: self)
+        print("woot yo")
+        if let targetRect = self.boundingRect() {
+            copyMenu.setTargetRect(targetRect, in: self)
+        } else {
+            copyMenu.setTargetRect(bounds, in: self)
+        }
         copyMenu.setMenuVisible(true, animated: true)
     }
 
@@ -81,4 +86,30 @@ extension UILabel {
         UIPasteboard.general.string = text
     }
     
+}
+
+extension UILabel {
+    func boundingRect() -> CGRect? {
+        
+        guard let attributedText = attributedText else { return nil }
+        
+        let range = NSMakeRange(0, attributedText.length)
+        
+        let textStorage = NSTextStorage(attributedString: attributedText)
+        let layoutManager = NSLayoutManager()
+        
+        textStorage.addLayoutManager(layoutManager)
+        
+        let textContainer = NSTextContainer(size: bounds.size)
+        textContainer.lineFragmentPadding = 0.0
+        
+        layoutManager.addTextContainer(textContainer)
+        
+        var glyphRange = NSRange()
+        
+        // Convert the range for glyphs.
+        layoutManager.characterRange(forGlyphRange: range, actualGlyphRange: &glyphRange)
+        
+        return layoutManager.boundingRect(forGlyphRange: glyphRange, in: textContainer)
+    }
 }
