@@ -86,9 +86,6 @@ extension UILabel {
         UIPasteboard.general.string = text
     }
     
-}
-
-extension UILabel {
     func textBoundingRect() -> CGRect? {
         
         guard let attributedText = attributedText else { return nil }
