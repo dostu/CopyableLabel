@@ -57,22 +57,17 @@ extension UILabel {
 
         guard !copyMenu.isMenuVisible else { return }
 
-        becomeFirstResponder()
+        let _ = becomeFirstResponder()
 
         if let rect = self.textBoundingRect() {
             copyMenu.setTargetRect(rect, in: self)
-            // draw the rect by adding a layer
-            let border = CALayer()
-            border.frame = rect
-            border.backgroundColor = UIColor.lightGray.cgColor
-            self.layer.addSublayer(border)
         } else {
             copyMenu.setTargetRect(bounds, in: self)
         }
-        
+
         copyMenu.setMenuVisible(true, animated: true)
         
-        
+        NotificationCenter.default.post(name: NSNotification.Name("xyzzy"), object: self)
     }
 
     override open var canBecomeFirstResponder : Bool {
