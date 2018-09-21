@@ -61,11 +61,18 @@ extension UILabel {
 
         if let rect = self.textBoundingRect() {
             copyMenu.setTargetRect(rect, in: self)
+            // draw the rect by adding a layer
+            let border = CALayer()
+            border.frame = rect
+            border.backgroundColor = UIColor.lightGray.cgColor
+            self.layer.addSublayer(border)
         } else {
             copyMenu.setTargetRect(bounds, in: self)
         }
         
         copyMenu.setMenuVisible(true, animated: true)
+        
+        
     }
 
     override open var canBecomeFirstResponder : Bool {
