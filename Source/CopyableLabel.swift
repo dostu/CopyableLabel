@@ -67,7 +67,7 @@ extension UILabel {
 
         copyMenu.setMenuVisible(true, animated: true)
         
-        NotificationCenter.default.post(name: NSNotification.Name("xyzzy"), object: self)
+        NotificationCenter.default.post(name: .didShowCopyMenu, object: self)
     }
 
     override open var canBecomeFirstResponder : Bool {
@@ -112,4 +112,8 @@ extension UILabel {
         
         return layoutManager.boundingRect(forGlyphRange: glyphRange, in: textContainer)
     }
+}
+
+extension Notification.Name {
+    static let didShowCopyMenu = Notification.Name("didShowCopyMenu")
 }

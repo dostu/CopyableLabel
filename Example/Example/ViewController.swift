@@ -9,7 +9,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         copyableLabel.copyable = true
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(woot(_:)), name: .didShowCopyMenu, object: nil)
     }
 
+    @objc func woot(_ n:NSNotification) {
+        print("woot")
+    }
 }
 
