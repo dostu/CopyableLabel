@@ -10,10 +10,16 @@ class ViewController: UIViewController {
 
         copyableLabel.copyable = true
         
-        NotificationCenter.default.addObserver(self, selector: #selector(woot(_:)), name: .didShowCopyMenu, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(woot(_:)), name: .copyableLabelDidShowCopyMenu, object: nil)
     }
 
-    @objc func woot(_ n:NSNotification) {
-        print("woot")
+    @objc func woot(_ notification:NSNotification) {
+        
+        if let label = notification.object as? UILabel {
+            print(label.text!)
+        }
+        print(notification.userInfo?["rect"] ?? "empty")
+        
+        // Do other interesting UI stuff here
     }
 }

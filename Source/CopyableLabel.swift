@@ -61,10 +61,10 @@ extension UILabel {
 
         if let rect = self.textBoundingRect() {
             copyMenu.setTargetRect(rect, in: self)
-            NotificationCenter.default.post(name: .didShowCopyMenu, object: self, userInfo: ["rect":rect])
+            NotificationCenter.default.post(name: .copyableLabelDidShowCopyMenu, object: self, userInfo: ["rect":rect])
         } else {
             copyMenu.setTargetRect(bounds, in: self)
-            NotificationCenter.default.post(name: .didShowCopyMenu, object: self, userInfo: ["rect":bounds])
+            NotificationCenter.default.post(name: .copyableLabelDidShowCopyMenu, object: self, userInfo: ["rect":bounds])
         }
 
         copyMenu.setMenuVisible(true, animated: true)
@@ -115,5 +115,5 @@ extension UILabel {
 }
 
 extension Notification.Name {
-    public static let didShowCopyMenu = Notification.Name("didShowCopyMenu")
+    public static let copyableLabelDidShowCopyMenu = Notification.Name("copyableLabelDidShowCopyMenu")
 }
