@@ -61,13 +61,13 @@ extension UILabel {
 
         if let rect = self.textBoundingRect() {
             copyMenu.setTargetRect(rect, in: self)
+            NotificationCenter.default.post(name: .didShowCopyMenu, object: self, userInfo: ["rect":rect])
         } else {
             copyMenu.setTargetRect(bounds, in: self)
+            NotificationCenter.default.post(name: .didShowCopyMenu, object: self, userInfo: ["rect":bounds])
         }
 
         copyMenu.setMenuVisible(true, animated: true)
-        
-        NotificationCenter.default.post(name: .didShowCopyMenu, object: self)
     }
 
     override open var canBecomeFirstResponder : Bool {
@@ -115,5 +115,5 @@ extension UILabel {
 }
 
 extension Notification.Name {
-    static let didShowCopyMenu = Notification.Name("didShowCopyMenu")
+    public static let didShowCopyMenu = Notification.Name("didShowCopyMenu")
 }
