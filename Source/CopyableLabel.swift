@@ -57,9 +57,16 @@ extension UILabel {
 
         guard !copyMenu.isMenuVisible else { return }
 
-        becomeFirstResponder()
+        let _ = becomeFirstResponder()
 
-        copyMenu.setTargetRect(bounds, in: self)
+        if let rect = self.textBoundingRect() {
+            copyMenu.setTargetRect(rect, in: self)
+            NotificationCenter.default.post(name: .copyableLabelDidShowCopyMenu, object: self, userInfo: ["rect":rect])
+        } else {
+            copyMenu.setTargetRect(bounds, in: self)
+            NotificationCenter.default.post(name: .copyableLabelDidShowCopyMenu, object: self, userInfo: ["rect":bounds])
+        }
+
         copyMenu.setMenuVisible(true, animated: true)
     }
 
@@ -81,4 +88,32 @@ extension UILabel {
         UIPasteboard.general.string = text
     }
     
+    func textBoundingRect() -> CGRect? {
+        
+        guard let attributedText = attributedText else { return nil }
+        
+        let range = NSMakeRange(0, attributedText.length)
+        
+        let textStorage = NSTextStorage(attributedString: attributedText)
+        
+        let layoutManager = NSLayoutManager()
+        
+        textStorage.addLayoutManager(layoutManager)
+        
+        let textContainer = NSTextContainer(size: bounds.size)
+        
+        textContainer.lineFragmentPadding = 0.0
+        
+        layoutManager.addTextContainer(textContainer)
+        
+        var glyphRange = NSRange()
+        
+        layoutManager.characterRange(forGlyphRange: range, actualGlyphRange: &glyphRange)
+        
+        return layoutManager.boundingRect(forGlyphRange: glyphRange, in: textContainer)
+    }
+}
+
+extension Notification.Name {
+    public static let copyableLabelDidShowCopyMenu = Notification.Name("copyableLabelDidShowCopyMenu")
 }
