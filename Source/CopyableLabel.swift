@@ -64,6 +64,8 @@ extension UILabel {
         copyMenu.setTargetRect(rect, in:self)
 
         copyMenu.setMenuVisible(true, animated: true)
+        
+        NotificationCenter.default.post(name: .copyableLabelDidShowCopyMenu, object: self, userInfo: nil)
     }
 
     override open var canBecomeFirstResponder : Bool {
@@ -83,4 +85,8 @@ extension UILabel {
     override open func copy(_ sender: Any?) {
         UIPasteboard.general.string = text
     }
+}
+
+extension Notification.Name {
+    public static let copyableLabelDidShowCopyMenu = Notification.Name("copyableLabelDidShowCopyMenu")
 }
