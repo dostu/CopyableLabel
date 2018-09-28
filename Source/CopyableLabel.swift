@@ -59,7 +59,10 @@ extension UILabel {
 
         becomeFirstResponder()
 
-        copyMenu.setTargetRect(bounds, in: self)
+        let rect = self.textRect(forBounds: self.bounds, limitedToNumberOfLines: 0)
+
+        copyMenu.setTargetRect(rect, in:self)
+
         copyMenu.setMenuVisible(true, animated: true)
     }
 
@@ -80,5 +83,4 @@ extension UILabel {
     override open func copy(_ sender: Any?) {
         UIPasteboard.general.string = text
     }
-    
 }
