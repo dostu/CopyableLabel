@@ -62,8 +62,7 @@ extension UILabel {
         copyMenu.setTargetRect(bounds, in: self)
         copyMenu.setMenuVisible(true, animated: true)
         
-        NotificationCenter.default.post(name: .copyableLabelDidShowCopyMenu, object: self, userInfo: ["rect":bounds])
-
+        NotificationCenter.default.post(name: .copyableLabelDidShowCopyMenu, object: self, userInfo: nil)
     }
 
     override open var canBecomeFirstResponder : Bool {

@@ -18,9 +18,7 @@ class ViewController: UIViewController {
     NotificationCenter.default.addObserver(self, selector: #selector(didHideCopyMenu(_:)), name: Notification.Name.UIMenuControllerDidHideMenu, object: nil)
         
         if let copyingText = notification.object as? UILabel {
-            print(copyingText.text)
-            let rect = notification.userInfo!["rect"] as! CGRect
-            print(rect)
+            print(copyingText.text as Any)
             // Do interesting stuff
         }
     }

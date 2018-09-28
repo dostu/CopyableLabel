@@ -21,15 +21,13 @@ If another object (e.g. UIViewController) has a need to know which CopyableLabel
 NotificationCenter.default.addObserver(self, selector: #selector(receivedCopyableLabelNotification(_:)), name: .copyableLabelDidShowCopyMenu, object: nil)
 ```
 
-The registering object will receive a Notification that contains a reference to the CopyableLabel that posted the notification and the notification's userInfo dictionary will contain an entry "rect" referencing the rectangle used to display the Copy menu.
+The registering object will receive a Notification that contains a reference to the CopyableLabel that posted the notification.
 
 ```
 @objc func receivedCopyableLabelNotification(_ notification:NSNotification) {
 	if let label = notification.object as? UILabel {
 		print(label.text!)
 	}
-	print(notification.userInfo?["rect"] ?? "empty")     
-	// Do other interesting UI stuff here
 }
 ```
 
