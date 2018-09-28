@@ -59,13 +59,13 @@ extension UILabel {
 
         becomeFirstResponder()
 
-        let rect = self.textRect(forBounds: self.bounds, limitedToNumberOfLines: 0)
-
-        copyMenu.setTargetRect(rect, in:self)
-
+        let rect = textRect(forBounds: bounds, limitedToNumberOfLines: 0)
+        copyMenu.setTargetRect(rect, in: self)
         copyMenu.setMenuVisible(true, animated: true)
         
-        NotificationCenter.default.post(name: .copyableLabelDidShowCopyMenu, object: self, userInfo: nil)
+        NotificationCenter.default.post(
+            name: CopyableLabel.didShowCopyMenuNotification, object: self, userInfo: nil
+        )
     }
 
     override open var canBecomeFirstResponder : Bool {
@@ -87,6 +87,7 @@ extension UILabel {
     }
 }
 
-extension Notification.Name {
-    public static let copyableLabelDidShowCopyMenu = Notification.Name("copyableLabelDidShowCopyMenu")
+
+public class CopyableLabel {
+    public static let didShowCopyMenuNotification = NSNotification.Name("CopyableLabelDidShowCopyMenuNotification")
 }
